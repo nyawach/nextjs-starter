@@ -15,7 +15,7 @@ module.exports = {
 		},
 	},
   testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|js?|tsx?|ts?)$",
-  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   coveragePathIgnorePatterns: [
     "/node_modules/",
   ],
