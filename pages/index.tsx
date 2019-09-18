@@ -1,9 +1,9 @@
-import React from "react";
-import dynamic from "next/dynamic";
-import styled from "@emotion/styled";
+import React from "react"
+import dynamic from "next/dynamic"
+import styled from "@emotion/styled"
 
-const Default = dynamic(() => import("~/layouts/Default"));
-const Head = dynamic(() => import("next/head"));
+const Default = dynamic(() => import("~/layouts/Default"))
+const Head = dynamic(() => import("next/head"))
 
 function Home() {
   return (
@@ -15,11 +15,11 @@ function Home() {
         <h1>Hello Next.js!</h1>
       </Wrapper>
     </Default>
-  );
+  )
 }
 
 const Wrapper = styled.div`
   position: relative;
-`;
+`
 
-export default Home;
+export default Home

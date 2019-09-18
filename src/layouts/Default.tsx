@@ -1,5 +1,5 @@
-import React from "react";
-import Head from "next/head";
+import React from "react"
+import Head from "next/head"
 
 const Default = ({ children }) => {
   return (
@@ -13,6 +13,6 @@ const Default = ({ children }) => {
       {children}
       <footer>footer</footer>
     </>
-  );
-};
-export default Default;
+  )
+}
+export default Default
