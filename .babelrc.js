@@ -1,8 +1,9 @@
 module.exports = {
   "presets": [
     "next/babel",
-    "@zeit/next-typescript/babel",
-    "@emotion/babel-preset-css-prop"
+    "@emotion/babel-preset-css-prop",
+    "@babel/preset-env",
+    "@babel/preset-react",
   ],
   "plugins": [
     [
@@ -12,5 +13,5 @@ module.exports = {
         }
       }
     ]
-  ]
+  ],
 }
