@@ -1,6 +1,14 @@
 module.exports = {
-  "extends": ["airbnb", "plugin:prettier/recommended"],
-  "plugins": ["@typescript-eslint", "react-hooks"],
+  "extends": [
+    "airbnb",
+    "plugin:prettier/recommended",
+  ],
+  "plugins": [
+    "@typescript-eslint",
+    "react-hooks",
+    "prettier",
+    "jest",
+  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
@@ -10,6 +18,14 @@ module.exports = {
     "project": "./tsconfig.json"
   },
   "rules": {
+    "prettier/prettier": [
+      "error", {
+        "singleQuote": false,
+        "semi": false,
+        "trailingComma": "es5",
+        "jsxBracketSameLine": false,
+      }
+    ],
     "arrow-parens": [2, "as-needed"],
     "curly": [1, "all"],
     "no-unused-vars": 0,
@@ -27,7 +43,6 @@ module.exports = {
     "import/no-unresolved": 0,
     "no-undef": 1,
     "react/no-array-index-key": 0,
-    "prettier/prettier": 1,
     "jsx-a11y/label-has-associated-control": 1,
     "jsx-a11y/label-has-for": 1,
     "import/prefer-default-export": 1,
