@@ -1,17 +1,18 @@
-import Head from "next/head"
+import React from "react";
+import Head from "next/head";
 
-const Default = ({children}) => {
+const Default = ({ children }) => {
   return (
     <>
       <Head>
         <title>Hello Title</title>
-        <meta charSet='utf-8' />
-        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <header>test</header>
+      <header>header</header>
       {children}
       <footer>footer</footer>
     </>
-  )
-}
-export default Default
+  );
+};
+export default Default;
