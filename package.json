@@ -11,7 +11,7 @@
     "start": "next start",
     "export": "npm run build && next export",
     "lint": "eslint --ext .ts,.tsx,.js --fix .",
-    "test": "jest"
+    "test": "NODE_ENV=test jest --silent --verbose"
   },
   "dependencies": {
     "@emotion/core": "^10.0.14",
@@ -19,13 +19,13 @@
     "babel-core": "^6.26.3",
     "isomorphic-unfetch": "^3.0.0",
     "next": "^9.0.2",
-    "react-dom": "^16.8.6",
-    "react": "^16.8.6"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "@emotion/babel-preset-css-prop": "^10.0.14",
-    "@types/enzyme-adapter-react-16": "^1.0.5",
     "@types/enzyme": "^3.10.3",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
     "@types/jest": "^24.0.18",
     "@types/node": "^12.6.6",
     "@types/react": "^16.8.23",
@@ -34,19 +34,20 @@
     "@zeit/next-typescript": "^1.1.1",
     "babel-jest": "^24.9.0",
     "babel-plugin-module-resolver": "^3.2.0",
-    "enzyme-adapter-react-16": "^1.14.0",
     "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "eslint": "^6.0.1",
     "eslint-config-airbnb": "^17.1.1",
     "eslint-config-prettier": "^6.0.0",
     "eslint-loader": "^2.2.1",
     "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jest": "^22.17.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react-hooks": "^1.6.1",
     "eslint-plugin-react": "^7.14.2",
-    "eslint": "^6.0.1",
-    "jest-enzyme": "^7.1.1",
+    "eslint-plugin-react-hooks": "^1.6.1",
     "jest": "^24.9.0",
+    "jest-enzyme": "^7.1.1",
     "prettier": "^1.18.2",
     "ts-jest": "^24.1.0",
     "typescript": "^3.6.3"
